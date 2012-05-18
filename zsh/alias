@@ -1,6 +1,12 @@
+#alias cs225='sshfs sgrand2@remlnx.ews.illinois.edu:/home/sgrand2/cs225 /home/sgranda/Desktop/cs225'
 alias cp='nocorrect cp'
 alias mv='nocorrect mv'
 alias rm='nocorrect rm -ir'
 alias mkdir='nocorrect mkdir'
 alias :q='exit'
 alias :wq='exit'
+alias remlnx='sshfs sgrand2@remlnx.ews.illinois.edu:/home/sgrand2/ /home/sgranda/remlnx_mnt'
+alias uiuc='ssh sgrand2@remlnx.ews.illinois.edu';
+alias sondheim='ssh sgranda@128.174.73.34';
+alias nightmare='ssh sgrand2@130.126.178.194';
+
