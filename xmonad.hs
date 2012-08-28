@@ -26,7 +26,7 @@ myFloatHook = composeAll [
 	className =? "qemu" --> doFloat
 	]
 
-myLayoutHook = tiled ||| Mirror tiled ||| Grid ||| simpleTabbed
+myLayoutHook = tiled ||| Mirror tiled ||| Grid ||| simpleTabbed ||| Full
 	where
 		-- default tiling algorithm partitions the screen into two panes
 		tiled   = Tall nmaster delta ratio
@@ -41,7 +41,7 @@ myLayoutHook = tiled ||| Mirror tiled ||| Grid ||| simpleTabbed
 		delta   = 3/100
 
 main = do
-	xmproc <- spawnPipe "~/bin/xmobar"
+	xmproc <- spawnPipe "/usr/bin/xmobar"
 	xmonad $ withUrgencyHook NoUrgencyHook defaultConfig
 			{ manageHook = manageDocks <+> myFloatHook <+> manageHook defaultConfig <+> scratchpadManageHook (W.RationalRect 0.25 0.25 0.5 0.5)
 			, layoutHook = avoidStruts $ smartBorders $ myLayoutHook
@@ -64,6 +64,7 @@ main = do
 			, ("M-<Down>", windows W.focusDown)
 			, ("M-S-<Down>", windows W.swapDown)
 			, ("M-`", toggleWS)
+			, ("M-i", spawn "chromium-browser")
 			, ("M-s", moveTo Next EmptyWS)
 			, ("M-S-s", shiftTo Next EmptyWS)
 			, ("M-g", scratchpadSpawnAction defaultConfig { terminal = "xterm" })
