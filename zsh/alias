@@ -9,4 +9,5 @@ alias remlnx='sshfs sgrand2@remlnx.ews.illinois.edu:/home/sgrand2/ /home/sgranda
 alias uiuc='ssh sgrand2@remlnx.ews.illinois.edu';
 alias sondheim='ssh sgranda@128.174.73.34';
 alias nightmare='ssh sgrand2@130.126.178.194';
+alias arm-gcc='/home/sgranda/stellaris-dev/sat/bin/arm-none-eabi-gcc'
 
