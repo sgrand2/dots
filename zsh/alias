@@ -10,4 +10,8 @@ alias uiuc='ssh sgrand2@remlnx.ews.illinois.edu';
 alias sondheim='ssh sgranda@128.174.73.34';
 alias nightmare='ssh sgrand2@130.126.178.194';
 alias arm-gcc='/home/sgranda/stellaris-dev/sat/bin/arm-none-eabi-gcc'
+alias arm-ld='/home/sgranda/stellaris-dev/sat/bin/arm-none-eabi-ld'
+alias arm-obj='/home/sgranda/stellaris-dev/sat/bin/arm-none-eabi-objcopy'
+alias lm4flash='/home/sgranda/stellaris-dev/lm4tools/lm4flash/lm4flash'
+
 
