@@ -1,17 +1,21 @@
 #alias cs225='sshfs sgrand2@remlnx.ews.illinois.edu:/home/sgrand2/cs225 /home/sgranda/Desktop/cs225'
+#alias remlnx='sshfs sgrand2@remlnx.ews.illinois.edu:/home/sgrand2/ /home/sgranda/remlnx_mnt'
+#alias uiuc='ssh sgrand2@remlnx.ews.illinois.edu';
+#alias sondheim='ssh sgranda@128.174.73.34';
+#alias nightmare='ssh sgrand2@130.126.178.194';
 alias cp='nocorrect cp'
 alias mv='nocorrect mv'
 alias rm='nocorrect rm -ir'
 alias mkdir='nocorrect mkdir'
 alias :q='exit'
 alias :wq='exit'
-alias remlnx='sshfs sgrand2@remlnx.ews.illinois.edu:/home/sgrand2/ /home/sgranda/remlnx_mnt'
-alias uiuc='ssh sgrand2@remlnx.ews.illinois.edu';
-alias sondheim='ssh sgranda@128.174.73.34';
-alias nightmare='ssh sgrand2@130.126.178.194';
 alias arm-gcc='/home/sgranda/stellaris-dev/sat/bin/arm-none-eabi-gcc'
 alias arm-ld='/home/sgranda/stellaris-dev/sat/bin/arm-none-eabi-ld'
 alias arm-obj='/home/sgranda/stellaris-dev/sat/bin/arm-none-eabi-objcopy'
 alias lm4flash='/home/sgranda/stellaris-dev/lm4tools/lm4flash/lm4flash'
-
-
+alias netmathdev='sshfs sgrand2@netmathdev.netmath.illinois.edu:/home/sgrand2/toolbox /home/sgranda/projects/netmath'
+alias netmath='ssh sgrand2@netmathdev.netmath.illinois.edu'
+alias netmathprod='ssh sgrand2@netmathprod.netmath.illinois.edu'
+alias boxmount='sudo mount https://dav.box.com/dav ~/box -t davfs'
+alias zaphod='ssh sgrand2@zaphod.math.uiuc.edu'
+alias dashbundle='cd /home/sgranda/projects/netmath/symfonyv/src/NetMath/DashBundle'

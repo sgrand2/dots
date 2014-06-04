@@ -17,6 +17,7 @@ autoload compinit; compinit -d "${HOME}/.zsh/.zcompdump-${LHOSTNAME}"
 autoload age
 autoload zmv
 
+
 if [ ${ZSH_VERSION//.} -gt 420 ] ; then
 	autoload -U url-quote-magic
 	zle -N self-insert url-quote-magic
@@ -29,6 +30,7 @@ zle -N edit-command-line
 watch=( all )
 export LOGCHECK=30
 export WATCHFMT=$'\e[00;00m\e[01;36m'" -- %n@%m has %(a.logged in.logged out) --"$'\e[00;00m'
+export PATH=$PATH:'/usr/sbin:/sbin'
 
 # directory hashes
 if [ -d "${HOME}/sandbox" ] ; then

@@ -35,3 +35,6 @@
 	excludesfile = ~/.gitignore
 [push]
 	default = matching
+[user]
+	name = sgrand2
+	email = sgrand2@illinois.edu
