@@ -325,6 +325,8 @@ nmap <silent> <F12> :silent set number!<CR>
 imap <silent> <F12> <C-O>:silent set number!<CR>
 noremap <silent> <F4> :set hls!<CR>
 
+nmap <silent> <F7> :tabn<CR>
+
 " Don't force column 0 for #
 inoremap # X<BS>#
 
