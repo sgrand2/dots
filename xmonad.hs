@@ -64,7 +64,7 @@ main = do
 			, ("M-<Down>", windows W.focusDown)
 			, ("M-S-<Down>", windows W.swapDown)
 			, ("M-`", toggleWS)
-			, ("M-i", spawn "chromium-browser")
+			, ("M-i", spawn "google-chrome")
 			, ("M-s", moveTo Next EmptyWS)
 			, ("M-S-s", shiftTo Next EmptyWS)
 			, ("M-g", scratchpadSpawnAction defaultConfig { terminal = "xterm" })
