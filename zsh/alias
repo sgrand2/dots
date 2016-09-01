@@ -1,6 +1,0 @@
-alias cp='nocorrect cp'
-alias mv='nocorrect mv'
-alias rm='nocorrect rm -ir'
-alias mkdir='nocorrect mkdir'
-alias :q='exit'
-alias :wq='exit'
